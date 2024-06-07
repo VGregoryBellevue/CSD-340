@@ -1,0 +1,38 @@
+/* Container Styling */
+#container {
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+/* Heading Styling (Color Scheme 1: Earthy Tones) */
+h1, h2, h3, h4 {
+  background-color: #F2E9E4; /* Light Beige */
+  color: #5D4037; /* Dark Brown */
+  border: 1px solid #D6A800; /* Golden Yellow */
+  padding: 10px;
+}
+
+/* Anchor Styling */
+a {
+  color: #9E9D24; /* Mustard Yellow */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #D6A800; /* Golden Yellow */
+}
+
+a:visited {
+  color: #795548; /* Brown */
+}
+
+/* Optional: Additional Color Scheme (Cool Tones) */
+/*
+h1, h2, h3, h4 {
+  background-color: #E3F2FD; 
+  color: #1565C0; 
+  border: 1px solid #0D47A1; 
+  padding: 10px;
+}
+*/
