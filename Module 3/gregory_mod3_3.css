@@ -1,0 +1,59 @@
+/* General Styling */
+body {
+  font-family: sans-serif; /* Choose your preferred font */
+}
+
+h1 {
+  text-align: center;
+}
+
+h3 {
+  font-weight: 500;
+}
+
+/* Side-by-Side Divs */
+.side-by-side-div {
+  width: 45%;
+  float: left; /* Allow them to sit side by side */
+  box-sizing: border-box; /* Include padding and border in element's total width */
+}
+
+/* Last Div */
+.last-div {
+  width: 100%;
+  margin-top: 60%;
+  clear: both; /* Clear the floats from previous divs */
+  float: right;
+  margin-bottom: 20px;
+}
+
+/* Lists */
+ul, ol {
+  font-weight: 300;
+  padding: 10px;
+  list-style-position: inside; /* Place numbers/bullets inside the list item box */
+}
+
+ol,
+ol h3 { /* Target the ordered list and its title */
+  border: 1px solid red;
+  border-radius: 15px;
+}
+
+ol {
+  list-style-type: decimal; /* Standard numbering style */
+}
+
+ul,
+ul h3 { /* Target the unordered list and its title */
+  border: 1px dashed red;
+  border-radius: 15px;
+}
+
+ul {
+  list-style-type: upper-roman; /* Uppercase Roman numerals */
+}
+
+/* Links */
+a {
+  text-decoration: none;
