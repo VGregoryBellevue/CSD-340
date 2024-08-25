@@ -1,59 +1,50 @@
-/* General Styling */
-body {
-  font-family: sans-serif; /* Choose your preferred font */
-}
-
+/* Center the h1 title */
 h1 {
-  text-align: center;
+    text-align: center;
 }
 
-h3 {
-  font-weight: 500;
+/* Side-by-side divs with 45% width */
+.side-by-side {
+    width: 45%;
+    display: inline-block;
 }
 
-/* Side-by-Side Divs */
-.side-by-side-div {
-  width: 45%;
-  float: left; /* Allow them to sit side by side */
-  box-sizing: border-box; /* Include padding and border in element's total width */
-}
-
-/* Last Div */
+/* Last div with 100% width and 60% margin-top */
 .last-div {
-  width: 100%;
-  margin-top: 60%;
-  clear: both; /* Clear the floats from previous divs */
-  float: right;
-  margin-bottom: 20px;
+    width: 100%;
+    margin-top: 60%;
+    float: right;
+    margin-bottom: 20px;
 }
 
-/* Lists */
+/* Set the weight of h3 tags to 500 */
+h3 {
+    font-weight: 500;
+}
+
+/* Set the weight of lists to 300 */
 ul, ol {
-  font-weight: 300;
-  padding: 10px;
-  list-style-position: inside; /* Place numbers/bullets inside the list item box */
+    font-weight: 300;
 }
 
-ol,
-ol h3 { /* Target the ordered list and its title */
-  border: 1px solid red;
-  border-radius: 15px;
+/* Apply 1px solid red border with 15px border-radius to ordered list and its title */
+ol, ol h3 {
+    border: 1px solid red;
+    border-radius: 15px;
+    padding: 10px;
+    list-style-position: inside; /* Numbers inside the border */
 }
 
-ol {
-  list-style-type: decimal; /* Standard numbering style */
+/* Apply 1px dashed red border with 15px border-radius to unordered list and its title */
+ul, ul h3 {
+    border: 1px dashed red;
+    border-radius: 15px;
+    padding: 10px;
+    list-style-type: upper-roman; /* Change bullet points to upper-roman */
+    list-style-position: inside; /* Bullets inside the border */
 }
 
-ul,
-ul h3 { /* Target the unordered list and its title */
-  border: 1px dashed red;
-  border-radius: 15px;
+/* Add :hover to links to show underlines */
+a:hover {
+    text-decoration: underline;
 }
-
-ul {
-  list-style-type: upper-roman; /* Uppercase Roman numerals */
-}
-
-/* Links */
-a {
-  text-decoration: none;
