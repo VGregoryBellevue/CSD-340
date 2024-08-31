@@ -29,11 +29,13 @@ figcaption {
     font-size: 0.75em;
     color: rgba(0, 0, 139, 0.8); /* Optional color change */
 
-#container2 p {
-  text-align: right;
-  margin: 0;
-}
+    #container2 p {
+        text-align: right;
+        margin: 0;
+    }
+    
+    #container2 p a {
+        display: inline-block;
+    }    
 
-#container2 p a {
-  display: inline-block;
 }
