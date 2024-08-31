@@ -1,3 +1,5 @@
+/* Victor Gregory 
+/* Prof Sampson
 /* Apply a grid layout to the image-gallery div */
 #image-gallery {
     display: grid;
@@ -28,14 +30,14 @@ figcaption {
     font-style: italic;
     font-size: 0.75em;
     color: rgba(0, 0, 139, 0.8); /* Optional color change */
+}
 
-    #container2 p {
-        text-align: right;
-        margin: 0;
-    }
-    
-    #container2 p a {
-        display: inline-block;
-    }    
+/* Style the #container2 p and a tags */
+#container2 p {
+    text-align: right;
+    margin: 0;
+}
 
+#container2 p a {
+    display: inline-block;
 }
