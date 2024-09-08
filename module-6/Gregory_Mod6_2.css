@@ -57,14 +57,15 @@ header h1 {
 }
 
 footer {
-    background-color: #333; /* Same as header color */
+    background-color: #333 !important; /* Force the background color to apply */
     position: absolute;
     bottom: 0;
     width: 100%;
+    color: white; /* Ensure the text color is also white */
+    padding: 10px 0; /* Optional: Add some padding for better spacing */
 }
 
 footer p {
-    color: #333;
     font-weight: 400;
     float: right;
     padding-right: 10px;
@@ -72,10 +73,11 @@ footer p {
 }
 
 footer a {
-    color: #453b3b;
-    text-decoration: none; /* Remove underline */
+    color: white;
+    text-decoration: none;
 }
 
 footer a:hover {
     text-decoration: underline;
 }
+
