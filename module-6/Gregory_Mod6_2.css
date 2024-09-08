@@ -1,4 +1,13 @@
+/* General body styling */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body covers the full height of the viewport */
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
 
+/* Header */
 header {
     background-color: #333; /* Dark color for header */
     color: white;
@@ -31,18 +40,21 @@ header h1 {
     color: #FFD700;
 }
 
+/* Main container */
 #container {
+    flex: 1; /* This makes the container take up all available space */
     margin-top: 2%;
     margin-left: 5%;
     margin-right: 5%;
     padding: 10px;
 }
 
-
+/* Card styling */
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     width: 50%;
+    background-color: white; /* Ensure card has a background */
 }
 
 .card-title {
@@ -57,31 +69,25 @@ header h1 {
 }
 
 .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-    font-weight: 400;
-    float: right;
-    padding-right: 10px;
-    font-style: italic;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* Ensure the body covers the full height of the viewport */
-    margin: 0;
-}
-
-#container {
-    flex: 1; /* This makes the container take up all available space */
-    padding: 10px;
-}
-
+/* Footer styling */
 footer {
     background-color: #333;
-    width: 100%;
     color: white;
-    padding: 10px 0;
+    padding: 10px;
     text-align: right;
+    width: 100%;
+    position: absolute; /* Ensure footer stays at the bottom */
+    bottom: 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
