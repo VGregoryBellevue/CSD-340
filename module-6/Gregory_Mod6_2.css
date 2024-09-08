@@ -60,28 +60,26 @@ header h1 {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-footer {
-    background-color: #333; /* Same as header color */
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
-
-footer p {
-    color: white;
     font-weight: 400;
     float: right;
     padding-right: 10px;
     font-style: italic;
 }
 
+footer {
+    background-color: #333;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    justify-content: flex-end; /* Aligns content to the right */
+    align-items: center; /* Vertically centers the content */
+}
+
 footer a {
     color: white;
     text-decoration: none;
     padding-right: 10px; /* Optional: Adds padding to the right for spacing */
-
-}
-
-footer a:hover {
-    text-decoration: underline;
 }
