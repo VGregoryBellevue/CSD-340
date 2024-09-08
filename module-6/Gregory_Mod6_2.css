@@ -1,5 +1,6 @@
+
 header {
-    background-color: #333;
+    background-color: #333; /* Dark color for header */
     color: white;
     padding: 20px;
     text-align: center; /* Centers the text */
@@ -9,9 +10,10 @@ header h1 {
     font-weight: 400;
 }
 
+/* Navbar */
 #navbar {
     overflow: hidden;
-    background-color: #453b3b; 
+    background-color: #444; 
     border-bottom: solid 15px #007ACC; 
 }
 
@@ -36,8 +38,11 @@ header h1 {
     padding: 10px;
 }
 
+
 .card {
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 50%;
 }
 
 .card-title {
@@ -56,17 +61,16 @@ header h1 {
 }
 
 footer {
-    background-color: #333;
-    position: absolute; /* Position the footer at the bottom */
+    background-color: #333; /* Same as header color */
+    position: absolute;
     bottom: 0;
     width: 100%;
-    color: white; /* Ensure the text color is also white */
-    padding: 10px 0; /* Optional: Add some padding for better spacing */
-    text-align: right; /* Aligns footer content to the right */
 }
 
 footer p {
+    color: white;
     font-weight: 400;
+    float: right;
     padding-right: 10px;
     font-style: italic;
 }
@@ -74,6 +78,8 @@ footer p {
 footer a {
     color: white;
     text-decoration: none;
+    padding-right: 10px; /* Optional: Adds padding to the right for spacing */
+
 }
 
 footer a:hover {
