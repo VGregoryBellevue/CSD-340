@@ -74,19 +74,27 @@ header h1 {
 
 /* Footer styling */
 footer {
-    background-color: #333;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f1f1f1; /* Ensure visibility of the footer */
     color: white;
     padding: 20px;
-    text-align: right;
-    width: 100%;
-    position: absolute; /* Ensure footer stays at the bottom */
-    bottom: 0;
+    text-align: left;
+    background-color: #333;
 }
 
+/* Footer link styling */
 footer a {
     color: white;
     text-decoration: none;
 }
+
+footer a:hover {
+    text-decoration: underline;
+}
+
 /* Movies table styling */
 #movies {
     border-collapse: collapse;
@@ -105,23 +113,7 @@ footer a {
     padding: 8px;
 }
 
-/* Footer styling */
-footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: #f1f1f1; /* Add a background color to ensure visibility */
-    text-align: left;
-    padding: 10px;
-}
-
 /* Container div margin */
 .container {
-    margin: 2% 5% 100px 5%; /* Leave space at the bottom for the fixed footer */
-}
-
-
-footer a:hover {
-    text-decoration: underline;
+    margin: 2% 5% 100px 5%; /* Ensure space for the footer */
 }
