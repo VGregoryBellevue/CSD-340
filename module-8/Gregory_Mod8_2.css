@@ -1,1 +1,93 @@
+/* General body styling */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body covers the full height of the viewport */
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
 
+/* Header */
+header {
+    background-color: #333; /* Dark color for header */
+    color: white;
+    padding: 20px;
+    text-align: center; /* Centers the text */
+}
+
+header h1 {
+    font-weight: 400;
+}
+
+/* Navbar */
+#navbar {
+    overflow: hidden;
+    background-color: #444; 
+    border-bottom: solid 15px #007ACC; 
+}
+
+#navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none; 
+}
+
+#navbar a:hover {
+    background-color: #555;
+    color: #FFD700;
+}
+
+/* Main container */
+#container {
+    flex: 1; /* This makes the container take up all available space */
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 10px;
+}
+
+/* Card styling */
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 50%;
+    background-color: white; /* Ensure card has a background */
+}
+
+.card-title {
+    text-align: center;
+    font-size: 2em;
+    color: #007ACC;
+    font-weight: 400;
+}
+
+.card-content {
+    padding: 2px 16px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: right;
+    width: 100%;
+    position: absolute; /* Ensure footer stays at the bottom */
+    bottom: 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
