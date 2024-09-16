@@ -2,42 +2,102 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Assignment 4.2 for CSD 340: Building a Web Page Exercise, Part 4">
-    <meta name="keywords" content="HTML, CSS, web development, Bellevue University">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSD 340 Web Development with HTML and CSS</title>
-    <link rel="stylesheet" href="Gregory_Mod6_2.css">
+    <link rel="stylesheet" href="LastName_Mod8_2.css">
 </head>
 <body>
     <header>
-        <h1>Assignment 6.2: Build a Web Page - Part 5</h1>
+        <h1>Assignment 8.2: Build a Web Page - Part 6</h1>
     </header>
-
-    <div id="navbar">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-    </div>
-
-    <div id="container">
-        <!-- Card for Top 5 Favorite Foods -->
+    
+    <div class="container">
+        <!-- First card: Movies -->
         <div class="card">
             <div class="card-title">
-                <h2>Top 5 Favorite Foods</h2>
+                <h2>Top 5 Favorite Movies</h2>
             </div>
             <div class="card-content">
-                <ol>
-                    <li><a href="https://www.foodandwine.com/recipes/arroz-con-chorizo-puerto-rican-rice-with-sausage">Arroz con Longaniza</a></li>
-                    <li><a href="https://healthyrican.com/what-is-the-origin-of-mofongo-recipes/">Mofongo</a></li>
-                    <li><a href="https://www.simplyrecipes.com/recipes/pastelon_puerto_rican_plantain_lasagna/">Pastelon</a></li>
-                    <li><a href="https://elgourmet.com/recetas/arroz-con-pollo-con-habichuelas-guisadas/">Arroz con Pollo y Habichuelas Guisadas</a></li>
-                    <li><a href="https://www.allrecipes.com/recipe/246392/puerto-rican-canned-corned-beef-stew/">Corned Beef Stew</a></li>
-                </ol>
+                <table id="movies">
+                    <thead>
+                        <tr>
+                            <th>Movie Name</th>
+                            <th>Two Characters</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Inception</td>
+                            <td>
+                                <ul>
+                                    <li>Dom Cobb</li>
+                                    <li>Arthur</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>The Matrix</td>
+                            <td>
+                                <ul>
+                                    <li>Neo</li>
+                                    <li>Morpheus</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Star Wars</td>
+                            <td>
+                                <ul>
+                                    <li>Luke Skywalker</li>
+                                    <li>Darth Vader</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>The Dark Knight</td>
+                            <td>
+                                <ul>
+                                    <li>Batman</li>
+                                    <li>Joker</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Interstellar</td>
+                            <td>
+                                <ul>
+                                    <li>Cooper</li>
+                                    <li>Dr. Brand</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Add two line breaks between the two cards -->
+        <br><br>
+
+        <!-- Second card: Favorite Foods (copied from the last assignment) -->
+        <div class="card">
+            <div class="card-title">
+                <h2>Favorite Foods</h2>
+            </div>
+            <div class="card-content">
+                <ul>
+                    <li>Pizza</li>
+                    <li>Burgers</li>
+                    <li>Sushi</li>
+                    <li>Pasta</li>
+                    <li>Ice Cream</li>
+                </ul>
             </div>
         </div>
     </div>
+
     <footer>
-        <p><a href="https://vgregorybellevue.github.io/CSD-340/index.html">Back to the Landing Page</a></p>
+        &copy; 2024 YourLastName
     </footer>
 </body>
 </html>
