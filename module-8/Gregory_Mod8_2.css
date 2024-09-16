@@ -87,6 +87,40 @@ footer a {
     color: white;
     text-decoration: none;
 }
+/* Movies table styling */
+#movies {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+#movies th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+}
+
+#movies td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+/* Footer styling */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f1f1f1; /* Add a background color to ensure visibility */
+    text-align: left;
+    padding: 10px;
+}
+
+/* Container div margin */
+.container {
+    margin: 2% 5% 100px 5%; /* Leave space at the bottom for the fixed footer */
+}
+
 
 footer a:hover {
     text-decoration: underline;
