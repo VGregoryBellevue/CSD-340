@@ -1,1 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+</head>
+<body>
+    <h1>Assignment 11.2: JavaScript - Part 3</h1>
+    
+    <input type="text" id="textBox" placeholder="Enter text here">
+    <button onclick="addElement()">Add</button>
+    <button onclick="deleteLast()">Delete Last Entry</button>
+    <button onclick="displayArray()">Display</button>
+    
+    <script>
+        // Initialize an empty array
+        let array = [];
+
+        // Function to add element to the array
+        function addElement() {
+            const textBox = document.getElementById('textBox').value;
+            if (textBox !== "") {
+                array.push(textBox);
+                alert(`Added "${textBox}" to position ${array.length}`);
+                document.getElementById('textBox').value = '';  // Clear the text box after adding
+            } else {
+                alert("Text box is empty. Please enter something.");
+            }
+        }
+
+        // Function to delete the last element in the array
+        function deleteLast() {
+            if (array.length > 0) {
+                let deleted = array.pop();
+                alert(`Deleted last entry: "${deleted}"`);
+            } else {
+                alert("Array is empty. Nothing to delete.");
+            }
+        }
+
+        // Function to display the contents of the array
+        function displayArray() {
+            if (array.length > 0) {
+                alert("Array contents: " + array.join(", "));
+            } else {
+                alert("Array is empty.");
+            }
+        }
+    </script>
+</body>
+</html>
 
