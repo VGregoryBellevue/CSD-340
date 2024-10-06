@@ -9,8 +9,11 @@
     <h1>Assignment 11.2: JavaScript - Part 3</h1>
     
     <input type="text" id="textBox" placeholder="Enter text here">
+    <br><br>
+    <input type="number" id="deleteIndex" placeholder="Enter index to delete (optional)">
+    <br><br>
     <button onclick="addElement()">Add</button>
-    <button onclick="deleteLast()">Delete Last Entry</button>
+    <button onclick="deleteEntry()">Delete Entry</button>
     <button onclick="displayArray()">Display</button>
     
     <script>
@@ -29,20 +32,34 @@
             }
         }
 
-        // Function to delete the last element in the array
-        function deleteLast() {
-            if (array.length > 0) {
-                let deleted = array.pop();
-                alert(`Deleted last entry: "${deleted}"`);
+        // Function to delete an entry from the array
+        function deleteEntry() {
+            const deleteIndex = document.getElementById('deleteIndex').value;
+
+            if (deleteIndex !== "") {
+                const index = parseInt(deleteIndex) - 1; // Convert to zero-based index
+                if (index >= 0 && index < array.length) {
+                    let deleted = array.splice(index, 1); // Delete the specific item
+                    alert(`Deleted entry: "${deleted[0]}" from position ${deleteIndex}`);
+                } else {
+                    alert("Invalid index. Please enter a valid number.");
+                }
             } else {
-                alert("Array is empty. Nothing to delete.");
+                if (array.length > 0) {
+                    let deleted = array.pop();
+                    alert(`Deleted last entry: "${deleted}"`);
+                } else {
+                    alert("Array is empty. Nothing to delete.");
+                }
             }
+            document.getElementById('deleteIndex').value = '';  // Clear the delete index after deleting
         }
 
         // Function to display the contents of the array
         function displayArray() {
             if (array.length > 0) {
-                alert("Array contents: " + array.join(", "));
+                let displayText = array.map((item, index) => `${index + 1}. ${item}`).join("\n");
+                alert("Array contents:\n" + displayText);
             } else {
                 alert("Array is empty.");
             }
@@ -50,4 +67,3 @@
     </script>
 </body>
 </html>
-
