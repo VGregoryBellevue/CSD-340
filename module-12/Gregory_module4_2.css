@@ -1,0 +1,44 @@
+/* Victor Gregory 
+/* Professor Sampson
+/* 4.2
+/* Apply a grid layout to the image-gallery div */
+#image-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Create three equal-width columns */
+    gap: 20px; /* Space between the columns */
+    margin-top: 10%; /* Space above the gallery */
+}
+
+/* Center the text inside the h1 tag */
+h1 {
+    text-align: center;
+    color: rgba(0, 128, 128, 0.8); /* Optional color change */
+}
+
+/* Center the text inside the h3 tags */
+h3 {
+    text-align: center;
+    color: rgba(255, 69, 0, 0.8); /* Optional color change */
+}
+
+/* Center the image inside the figure tag */
+figure {
+    text-align: center;
+}
+
+/* Style the figcaption text */
+figcaption {
+    font-style: italic;
+    font-size: 0.75em;
+    color: rgba(0, 0, 139, 0.8); /* Optional color change */
+}
+
+/* Style the #container2 p and a tags */
+#container2 p {
+    text-align: right;
+    margin: 0;
+}
+
+#container2 p a {
+    display: inline-block;
+}
