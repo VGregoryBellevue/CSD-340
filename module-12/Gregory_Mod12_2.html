@@ -1,1 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Assignment 4.2 for CSD 340: Building a Web Page Exercise, Part 4">
+    <meta name="keywords" content="HTML, CSS, web development, Bellevue University">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <link rel="stylesheet" href="Gregory_Mod4_2.css">
+    <script>
+        // Array of top ten books
+        const topTenBooks = [
+            "Dune by Frank Herbert",
+            "1984 by George Orwell",
+            "The Hobbit by J.R.R. Tolkien",
+            "The Catcher in the Rye by J.D. Salinger",
+            "Brave New World by Aldous Huxley",
+            "Fahrenheit 451 by Ray Bradbury",
+            "The Great Gatsby by F. Scott Fitzgerald",
+            "Moby Dick by Herman Melville",
+            "To Kill a Mockingbird by Harper Lee",
+            "The Lord of the Rings by J.R.R. Tolkien"
+        ];
 
+        // Function to display books in ascending order
+        function displayTopToBottom() {
+            let bookList = topTenBooks.slice().sort();  // Sort in ascending order
+            document.getElementById("bookList").innerHTML = "<ul><li>" + bookList.join("</li><li>") + "</li></ul>";
+        }
+
+        // Function to display books in descending order
+        function displayBottomToTop() {
+            let bookList = topTenBooks.slice().sort().reverse();  // Sort in descending order
+            document.getElementById("bookList").innerHTML = "<ul><li>" + bookList.join("</li><li>") + "</li></ul>";
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Assignment 12.2: JavaScript - Part 4</h1>
+    </header>
+
+    <div id="container">
+        <div id="image-gallery">
+            <div class="gallery-item">
+                <h3>War of the Worlds</h3>
+                <figure>
+                    <img src="images/War_of_the_Worlds.jpg" alt="Book Cover 1">
+                    <figcaption>Author: H.G. Wells</figcaption>
+                </figure>
+            </div>
+            <div class="gallery-item">
+                <h3>Millennium</h3>
+                <figure>
+                    <img src="images/Millennium.jpg" alt="Book Cover 2">
+                    <figcaption>Author: John Varley</figcaption>
+                </figure>
+            </div>
+            <div class="gallery-item">
+                <h3>Mass Effect: Revelation</h3>
+                <figure>
+                    <img src="images/Mass_Effect_Revelation.jpg" alt="Book Cover 3">
+                    <figcaption>Author: Drew Karpyshyn</figcaption>
+                </figure>
+            </div>
+        </div>
+
+        <!-- New section to display top ten books -->
+        <div id="book-section">
+            <h2>Top 10 Books</h2>
+            <button onclick="displayTopToBottom()">Top to Bottom</button>
+            <button onclick="displayBottomToTop()">Bottom to Top</button>
+
+            <!-- Area where the book list will be displayed -->
+            <div id="bookList"></div>
+        </div>
+
+        <div id="container2">
+            <p><a href="https://vgregorybellevue.github.io/CSD-340/index.html">Back to the Landing Page</a></p>
+        </div>
+    </div>
+</body>
+</html>
